@@ -4,8 +4,6 @@ import LoadingPage from './routes/LoadingPage'
 import Home from './Home'
 import Basic from './routes/Basic'
 import Dot from './routes/Dot'
-import Lavitate from './routes/Lavitate'
-
 
 const App = () => {
   return (
@@ -15,9 +13,6 @@ const App = () => {
         <Route path="/loading" element={<LoadingPage/>}/>
         <Route path="/basic" element={<Basic/>}/>
         <Route path="/dot" element={<Dot/>}/>
-        <Route path="/lavitate" element={<Lavitate/>}/>
-
-
       </Routes>
     </>
   )

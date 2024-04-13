@@ -8,8 +8,6 @@ const Home = () => {
             <li><Link to="/loading" >Loading Page</Link></li>
             <li><Link to="/basic" >Basic</Link></li>
             <li><Link to="/dot" >Dot</Link></li>
-            <li><Link to="/lavitate" >Lavitate</Link></li>
-
         </ul>
     </div>
   )
