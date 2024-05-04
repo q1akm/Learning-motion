@@ -1,9 +1,18 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 
 const Basic = () => {
   
   const [count, setCount] = useState(100);
+
+  useEffect(() => {
+    console.log(count);
+
+    return () =>{
+      console.log('Testing buddy');
+    }
+  }, [count])
+  
 
   return (
     <main className="w-screen h-screen flex justify-center items-center bg-black overflow-hidden">
