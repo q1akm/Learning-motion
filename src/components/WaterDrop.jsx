@@ -3,7 +3,7 @@ import anime from "animejs";
 const WaterDrop = () => {
 
   return (
-    <div className="relative w-full pt-10 bg-black grid  h-screen justify-center">
+    <div className="relative w-full pt-10  grid  h-screen justify-center">
         <DotGrid/>
     </div>
   )

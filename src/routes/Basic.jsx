@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 const Basic = () => {
   
@@ -15,7 +15,7 @@ const Basic = () => {
   
 
   return (
-    <main className="w-screen h-screen flex justify-center items-center bg-black overflow-hidden">
+    <main className="w-screen h-screen flex flex-col justify-center gap-10 items-center bg-black overflow-hidden">
       
       <div className="flex flex-col justify-center gap-5">
         <button 
@@ -25,9 +25,10 @@ const Basic = () => {
         <button 
         className="text-black text-lg bg-white rounded-xl"
         onClick={() => setCount(count + 10)}>+</button>
-        <Link to="/" className="text-white ">back/home</Link>
+        
       </div>
-      
+      <Button back="/" next="/dot"/>
+
     </main>
   )
 }

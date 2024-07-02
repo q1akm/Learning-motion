@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { animateTitle, animateImage, revealMenu } from "./animations";
 import { Link } from "react-router-dom";
+import Button from "../Button";
 
 
 
@@ -20,11 +21,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="bg-black  text-white w-full h-screen" ref={heroRef}>
-     
+    <section className="bg-black  text-white w-full h-screen flex flex-col justify-center items-center" ref={heroRef}>
         <Link to="/loading" className="split text-4xl flex justify-center">Welcome</Link>
-        <Link to="/" className="split text-xl underline flex justify-center">Back</Link>
-     
+        <Button back="/" next="/basic"/>     
     </section>
   );
 };
