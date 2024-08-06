@@ -8,14 +8,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #000;
     overflow: hidden;
     z-index: 2;
   
     &__wrapper {
       position: relative;
       height: 100%;
-      background-color: #000;
+      background-color: #730000;
       width: 100%;
       position: fixed;
       inset: 0;
@@ -65,7 +65,7 @@
     &__progress {
       height: 100%;
       width: 100%;
-      background-color: #000;
+      background-color: #730000;
       transform: scaleX(0);
       transform-origin: left center;
     }
@@ -77,7 +77,7 @@
       transform: translateY(-50%);
       z-index: 4;
       white-space: nowrap;
-      color: #fff;
+      color: #000;
       font-size: 3.2rem;
     }
   }

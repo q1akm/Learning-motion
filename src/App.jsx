@@ -4,7 +4,7 @@ import LoadingPage from './routes/LoadingPage'
 import Home from './Home'
 import Basic from './routes/Basic'
 import Dot from './routes/Dot'
-import Gsap from './routes/Gsap'
+import Gsap from './routes/Gsap/Gsap'
 
 const App = () => {
   return (
