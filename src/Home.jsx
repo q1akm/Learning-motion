@@ -9,7 +9,7 @@ const Home = () => {
               <li><Link to="/loading" >Loading Page</Link></li>
               <li><Link to="/basic" >Basic</Link></li>
               <li><Link to="/dot" >Dot</Link></li>
-              <li><Link to="/gsap" >Gsap</Link></li>
+              <li><Link to="/cursor" >Cursor</Link></li>
           </ul>
        </div>
 

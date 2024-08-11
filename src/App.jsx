@@ -4,7 +4,7 @@ import LoadingPage from './routes/LoadingPage'
 import Home from './Home'
 import Basic from './routes/Basic'
 import Dot from './routes/Dot'
-import Gsap from './routes/Gsap/Gsap'
+import Cursor from './routes/Cursor'
 
 const App = () => {
   return (
@@ -14,7 +14,8 @@ const App = () => {
         <Route path="/loading" element={<LoadingPage/>}/>
         <Route path="/basic" element={<Basic/>}/>
         <Route path="/dot" element={<Dot/>}/>
-        <Route path="/gsap" element={<Gsap/>}/>
+        <Route path="/cursor" element={<Cursor/>}/>
+
       </Routes>
     </>
   )
