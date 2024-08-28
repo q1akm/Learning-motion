@@ -52,7 +52,7 @@ const Cursor = () => {
         variants={variants}
         animate={cursorVariant}
       />
-        <Button back="/" next="/loading"/>
+        <Button back="/" next="/pagetrans"/>
     </main>
   )
 }
