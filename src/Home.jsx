@@ -11,6 +11,7 @@ const Home = () => {
               <li><Link to="/dot" >Dot</Link></li>
               <li><Link to="/cursor" >Cursor</Link></li>
               <li><Link to="/pagetrans" >Page Animated Transition</Link></li>
+              <li><Link to="/scroll" >Scrolling effect</Link></li>
         </ul>
        </div>
        <div>

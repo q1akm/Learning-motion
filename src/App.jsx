@@ -8,6 +8,7 @@ import Cursor from './routes/Cursor'
 import PageTrans from './routes/pageTrans/PageTrans'
 import About from './routes/pageTrans/About'
 import Contact from './routes/pageTrans/Contact'
+import Scroll from './routes/Scroll/Scroll'
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/pagetrans" element={<PageTrans/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/> 
+        <Route path="/scroll" element={<Scroll/>}/> 
       </Routes>
     </>
   )
