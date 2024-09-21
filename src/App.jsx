@@ -4,11 +4,11 @@ import LoadingPage from './routes/LoadingPage'
 import Home from './Home'
 import Basic from './routes/Basic'
 import Dot from './routes/Dot'
-import Cursor from './routes/Cursor'
+import Cursor from './routes/cursor/Cursor'
 import PageTrans from './routes/pageTrans/PageTrans'
 import About from './routes/pageTrans/About'
 import Contact from './routes/pageTrans/Contact'
-import Scroll from './routes/Scroll/Scroll'
+import Drag from './routes/Drag'
 
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/pagetrans" element={<PageTrans/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/> 
-        <Route path="/scroll" element={<Scroll/>}/> 
+        <Route path="/drag" element={<Drag/>}/> 
       </Routes>
     </>
   )

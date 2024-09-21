@@ -66,7 +66,7 @@ const PageTrans = () => {
           <div className="header-revealer"></div>
         </div>
         <div className="footer">(01)
-        <Button back="/cursor" next="/loading"/>
+        <Button back="/cursor" next="/drag"/>
         </div>
       </main>
     </div>
