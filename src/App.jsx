@@ -9,6 +9,7 @@ import PageTrans from './routes/pageTrans/PageTrans'
 import About from './routes/pageTrans/About'
 import Contact from './routes/pageTrans/Contact'
 import Drag from './routes/Drag'
+import GSAP001 from './routes/GSAP001'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/> 
         <Route path="/drag" element={<Drag/>}/> 
+        <Route path="/gsap001" element={<GSAP001/>}/> 
       </Routes>
     </>
   )
