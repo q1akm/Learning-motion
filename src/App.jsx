@@ -10,6 +10,7 @@ import About from './routes/pageTrans/About'
 import Contact from './routes/pageTrans/Contact'
 import Drag from './routes/Drag'
 import GSAP001 from './routes/GSAP001'
+import Test from './routes/Test/Test'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/contact" element={<Contact/>}/> 
         <Route path="/drag" element={<Drag/>}/> 
         <Route path="/gsap001" element={<GSAP001/>}/> 
+        <Route path="/test" element={<Test/>}/> 
       </Routes>
     </>
   )

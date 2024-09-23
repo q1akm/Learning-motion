@@ -13,6 +13,7 @@ const Home = () => {
               <li><Link to="/pagetrans" >Page Animated Transition</Link></li>
               <li><Link to="/drag" >Drag - GSAP</Link></li>
               <li><Link to="/gsap001" >GSAP 001</Link></li>
+              <li><Link to="/test" >Test</Link></li>
 
 
         </ul>
