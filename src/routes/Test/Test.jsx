@@ -9,7 +9,7 @@ function VideoPlayer ({src, isPlaying}) {
         } else {
             ref.current.pause();
         }
-    });
+    }, [isPlaying]);
     
     return <video src={src} ref={ref} loop playsInline/>
 }
