@@ -2,10 +2,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="w-screen h-screen flex flex-col justify-around items-center overflow-hidden">
-       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl flex justify-center text-red-500">Learning Motion</h1>
-        <ul className="flex flex-col justify-center items-center gap-10 mt-10 text-xl font-mono underline">
+    <div className="w-full h-full fixed flex flex-col justify-between items-start overflow-hidden p-10">
+        <ul className="flex items-start gap-5 text-xl outfit-regular underline max-md:flex-col">
               <li><Link to="/loading" >Loading Page</Link></li>
               <li><Link to="/basic" >Basic</Link></li>
               <li><Link to="/dot" >Dot</Link></li>
@@ -14,13 +12,14 @@ const Home = () => {
               <li><Link to="/drag" >Drag - GSAP</Link></li>
               <li><Link to="/gsap001" >GSAP 001</Link></li>
               <li><Link to="/test" >Test</Link></li>
-
-
         </ul>
-       </div>
-       <div>
-        <h1 className="text-black text-md">Test by <a href="https://aungkaungmyint.com/" className="text-red-500 hover:text-black hover:underline text-lg">akm</a></h1>
-       </div>
+        <div className="flx items-center justify-center">
+          <h1 className="text-black text-xl outfit-regular">Learning  
+            <span className="indie-flower-regular text-4xl">
+              Motion
+            </span>
+          </h1>
+        </div>
 
     </div>
   )
