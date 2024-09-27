@@ -6,7 +6,7 @@ const Dot = () => {
   return (
     <main className="bg-black w-full h-screen flex flex-col items-center">
       <WaterDrop/>
-      <Button back="/" next="/cursor"/>
+      <Button className="w-20 h-20 text-white bg-black flex item-center" next="/cursor"/>
     </main>
   )
 }

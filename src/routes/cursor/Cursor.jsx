@@ -53,7 +53,7 @@ function App() {
         variants={variants}
         animate={cursorVariant}
       />
-       <Button back="/dot" next="/pagetrans"/>
+       <Button className="w-20 h-20 text-white bg-black flex item-center" next="/pagetrans"/>
     </div>
   );
 }

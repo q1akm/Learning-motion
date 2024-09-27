@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './styles.css';
+import './pageTrans.css';
 import gsap from 'gsap';
 import barba from '@barba/core';
 import Button from '../../components/Button';
@@ -62,11 +62,11 @@ const About = () => {
         className="container"
       >
         <div className="header">
-          <h1>About</h1>
+          <h1 className='relative text-white text-8xl font-bold top-[120px]'>About</h1>
           <div className="header-revealer"></div>
         </div>
         <div className="footer">(02)
-        <Button back="/cursor" next="/loading"/>
+        <Button className="w-20 h-20 text-white bg-black flex item-center" next="/loading"/>
         </div>
       </main>
     </div>

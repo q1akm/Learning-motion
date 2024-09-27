@@ -21,9 +21,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="bg-black  text-white w-full h-screen flex flex-col justify-center items-center" ref={heroRef}>
-        <Link to="/loading" className="split text-4xl flex justify-center">Welcome</Link>
-        <Button back="/" next="/basic"/>     
+    <section className="bg-darkred  text-white w-full h-screen flex flex-col justify-center items-center" ref={heroRef}>
+        <Button className="w-20 h-20 text-white bg-darkred flex item-center" next="/basic"/>     
     </section>
   );
 };

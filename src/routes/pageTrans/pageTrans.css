@@ -41,16 +41,6 @@ a{
     position: relative;
     width: max-content;
     height: max-content;
-
-    
-    h1{
-        position: relative;
-        line-height: 1;
-        font-size: 120px;
-        font-weight: 400;
-        color: #fff;
-        top: 120px;
-    }
 }
 
 

@@ -60,7 +60,7 @@ const Drag = () => {
       <div id="flair" className='w-40 h-40 bg-orange-400 '></div>
       <div id="flair2" className='w-40 h-40 bg-red-400 '></div>
       <div id="flair3" className='w-40 h-40 bg-blue-400 '></div>
-      <Button back="/pagetrans" next="/loading"/>
+      <Button className="w-20 h-20 text-white bg-black flex item-center" next="/loading"/>
     </div>  
   )
 }

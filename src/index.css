@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -20,8 +20,3 @@
   font-style: normal;
 }
 
-.rock-salt-regular {
-  font-family: "Rock Salt", cursive;
-  font-weight: 400;
-  font-style: normal;
-}

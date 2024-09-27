@@ -27,7 +27,7 @@ const Basic = () => {
         onClick={() => setCount(count + 10)}>+</button>
         
       </div>
-      <Button back="/" next="/dot"/>
+      <Button className="w-20 h-20 text-white bg-black flex item-center" next="/dot"/>
 
     </main>
   )
