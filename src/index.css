@@ -6,6 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
 
 .outfit-regular {
   font-family: "Outfit", sans-serif;

@@ -1,10 +1,15 @@
 import gsap from 'gsap';
 import React, { useEffect, useRef, useState } from 'react'
+import { ScrollTrigger } from 'gsap/all';
 
-const GSAP001 = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+function GSAP001 (){
 
   const boxRef = useRef(null);
   const boxRef2 = useRef(null);
+  const boxRef3 = useRef(null);
+  const boxRef4 = useRef(null);
 
   useEffect(() => {
    const tl = gsap.timeline();
@@ -13,6 +18,20 @@ const GSAP001 = () => {
     .to(boxRef.current, {y: 200, duration: 1})
     .to(boxRef.current, {scale: 2, duration: 1})
     .to(boxRef.current, {rotate: 180, duration: 1});
+
+   const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: boxRef3.current,
+        start: "top 30%",
+        end: "top -10%",
+        scrub: true,
+        markers: true,
+        pin: true
+      }
+    });
+
+    tl2. to(boxRef3.current, {  x: 200, y: 100, duration: 2,})
+    tl2. to(boxRef4.current, {  x: 400, y: 100, duration: 1, background: "red"})
   }, [])
 
   const [color, setColor] = useState(false);
@@ -29,7 +48,8 @@ const GSAP001 = () => {
   
 
   return (
-    <main className='flex justify-start w-full h-full'>
+   <main className='w-full h-full'>
+     <div className='flex justify-start'>
       <div
       ref={boxRef}
       className='w-[100px] h-[100px] bg-black'>
@@ -43,8 +63,22 @@ const GSAP001 = () => {
       className='border-2 border-black w-20 h-20'>
         {color ? "blue" : "red"}
       </button>
-    </main>
+    </div>
+   <div className='border-2 border-black'>
+    <div className='w-full h-[50vh]'/>
+    <div 
+    ref={boxRef3}
+    className='w-[100px] h-[100px] bg-red-700'></div>
+    <div 
+    ref={boxRef4}
+    className='w-[100px] h-[100px] bg-indigo-500'></div>
+    <div className='w-full h-[100vh]'/>
+    
+   </div>
+   <br />
+   <br />
+   </main>
   )
 }
 
-export default GSAP001
+export default GSAP001;
