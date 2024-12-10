@@ -41,7 +41,6 @@ const Drag = () => {
       onDragEnd: () => flair2Animation.restart()
     }),
     Draggable.create("#flair3", {
-      type: "x",
       bounds: "#container",
       inertia: true
     }),

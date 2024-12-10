@@ -90,8 +90,7 @@ function GSAP001 (){
       <div className='w-full h-[100vh]'/>
       
     </div>
-    <div className='border-2 border-red-500'>
-      <div className='w-full h-[50vh]'/>
+    <div className='border-2 border-red-500 flex justify-center items-center w-full h-full'>
       <svg width={400} height={500}>
         <path
         ref={pathRef}
@@ -100,7 +99,6 @@ function GSAP001 (){
         fill='transparent'
         strokeWidth="2"/>
       </svg>
-      <div className='w-full h-[50vh]'/>
     </div>
    </main>
   )
