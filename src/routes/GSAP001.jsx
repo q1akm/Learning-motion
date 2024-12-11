@@ -1,9 +1,11 @@
 import gsap from 'gsap';
 import React, { useEffect, useRef, useState } from 'react'
-import { DrawSVGPlugin, ScrollTrigger } from 'gsap/all';
+import { Draggable, DrawSVGPlugin, ScrollTrigger } from 'gsap/all';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(Draggable);
+
 
 function GSAP001 (){
 
@@ -16,7 +18,7 @@ function GSAP001 (){
   useEffect(() => {
    const tl = gsap.timeline();
 
-   tl.to(boxRef.current, {x: 200, duration: 1})
+   tl.to(boxRef.current, {x: 600, duration: 1})
     .to(boxRef.current, {y: 200, duration: 1})
     .to(boxRef.current, {scale: 2, duration: 1})
     .to(boxRef.current, {rotate: 180, duration: 1});
@@ -31,8 +33,8 @@ function GSAP001 (){
       }
     });
 
-    tl2. to(boxRef3.current, {  x: 200, y: 100, duration: 2,})
-    tl2. to(boxRef4.current, {  x: 400, y: 100, duration: 1, background: "red"})
+    tl2. to(boxRef3.current, {  x: 300, duration: 2, ease: "power2.out"})
+    tl2. to(boxRef4.current, {  x: 500, duration: 1, background: "red", ease: "power2.out"})
 
     gsap.fromTo(
       pathRef.current, 
@@ -46,6 +48,26 @@ function GSAP001 (){
         }
       }
     );
+
+    gsap.to('#box', {
+      rotation: 360,
+      repeat: -1,
+      duration: 2,
+      ease: "linear",
+    })
+
+    Draggable.create('#box', {
+      bounds: '#container',
+      inertia: true,
+      onRelease: function () {
+        gsap.to('#box', {
+          x: 0,
+          y: 0,
+          duration: 2,
+          ease: "power2.out",
+        })
+      }
+    })
 
   }, [])
 
@@ -79,16 +101,13 @@ function GSAP001 (){
         {color ? "blue" : "red"}
       </button>
     </div>
-    <div className='border-2 border-black'>
-      <div className='w-full h-[50vh]'/>
+    <div className='border-2 border-black bg-black w-full h-full'>
       <div 
       ref={boxRef3}
       className='w-[100px] h-[100px] bg-red-700'></div>
       <div 
       ref={boxRef4}
       className='w-[100px] h-[100px] bg-indigo-500'></div>
-      <div className='w-full h-[100vh]'/>
-      
     </div>
     <div className='border-2 border-red-500 flex justify-center items-center w-full h-full'>
       <svg width={400} height={500}>
@@ -99,6 +118,10 @@ function GSAP001 (){
         fill='transparent'
         strokeWidth="2"/>
       </svg>
+    </div>
+    <div id="container" className='bg-black w-full h-screen flex justify-center items-center relative'>
+        <div id="box" className='w-[100px] h-[100px] bg-red-500 absolute'></div>
+        <h1 className='text-white relative'>You know, you can drag this element.</h1>
     </div>
    </main>
   )
