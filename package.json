@@ -11,13 +11,15 @@
     "host": "vite --host"
   },
   "dependencies": {
+    "@react-three/drei": "^9.120.4",
+    "@react-three/fiber": "^8.17.10",
     "animejs": "^3.2.2",
     "framer-motion": "^11.3.24",
     "gsap": "npm:gsap-trial@^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
-    "three": "^0.160.0"
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "@barba/core": "^2.10.3",

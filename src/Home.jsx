@@ -12,6 +12,7 @@ const Home = () => {
               <li><Link to="/drag" >Drag - GSAP</Link></li>
               <li><Link to="/gsap001" >GSAP 001</Link></li>
               <li><Link to="/test" >Test</Link></li>
+              <li><Link to="/3gsap" >ThreeGsap</Link></li>
         </ul>
         <div className="flx items-center justify-center">
           <h1 className="text-black text-xl outfit-regular">Learning  

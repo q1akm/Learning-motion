@@ -11,6 +11,7 @@ import Contact from './routes/pageTrans/Contact'
 import Drag from './routes/Drag'
 import GSAP001 from './routes/GSAP001'
 import Test from './routes/Test/Test'
+import ThreeGsap from './components/ThreeGsap'
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/drag" element={<Drag/>}/> 
         <Route path="/gsap001" element={<GSAP001/>}/> 
         <Route path="/test" element={<Test/>}/> 
+        <Route path="/3gsap" element={<ThreeGsap/>}/> 
       </Routes>
     </>
   )
